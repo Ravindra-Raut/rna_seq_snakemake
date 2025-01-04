@@ -38,4 +38,6 @@ wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR313/010/SRR31346810/SRR31346810_2
 mamba create -n rna-seq python=3.9
 mamba activate rna-seq 
 mamba install fastqc -c bioconda
-fastqc --version
+fastqc - *fastq.gz
+mamba install -c bioconda trimmomatic
+
